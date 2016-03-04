@@ -22,12 +22,9 @@ public class CanvasText extends stretchtextview {
     private static final String TAG = "CanvasText";
     Context context;
     String text = "1Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!1231111";
-
-
     public CanvasText(Context context) {
         this(context, null);
     }
-
     public CanvasText(Context context, AttributeSet attrs) {
         this(context, attrs, 0);
     }
@@ -36,7 +33,6 @@ public class CanvasText extends stretchtextview {
         super(context, attrs, defStyleAttr);
         this.context = context;
     }
-
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
