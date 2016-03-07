@@ -93,6 +93,7 @@ public class stretchtextview extends TextView {
     }
 
     /**
+     * 
      * 根据这些参数来配置字体大小
      *
      * @param text
