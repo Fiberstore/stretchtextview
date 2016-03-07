@@ -80,7 +80,6 @@ public class stretchtextview extends TextView {
         widthL = (w - oldw) - getCompoundPaddingLeft() - getCompoundPaddingRight();
         heightL = (h - oldh) - getCompoundPaddingBottom() - getCompoundPaddingTop();
         setNewText(widthL, heightL);
-
     }
 
     /**
