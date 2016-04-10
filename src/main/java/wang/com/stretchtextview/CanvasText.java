@@ -1,15 +1,11 @@
 package wang.com.stretchtextview;
 
 import android.content.Context;
-import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.text.Layout;
-import android.text.StaticLayout;
 import android.text.TextPaint;
 import android.util.AttributeSet;
-import android.util.Log;
-import android.util.TypedValue;
 
 
 /**
@@ -36,11 +32,12 @@ public class CanvasText extends stretchtextview {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        TextPaint tp = new TextPaint(Paint.ANTI_ALIAS_FLAG);
+        TextPaint tp = new  TextPaint(Paint.ANTI_ALIAS_FLAG);
         tp.setColor(getResources().getColor(R.color.colorAccent));
         tp.setTextSize(50);
         //以后写text都这么写
         setStretchTextView(text, dip2px(180f), dip2px(80f), tp, Layout.Alignment.ALIGN_CENTER, canvas);
+
     }
 
     /**

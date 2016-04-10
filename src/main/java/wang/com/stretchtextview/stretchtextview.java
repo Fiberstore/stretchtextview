@@ -3,6 +3,7 @@ package wang.com.stretchtextview;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
+import android.graphics.Paint;
 import android.text.Layout;
 import android.text.StaticLayout;
 import android.text.TextPaint;
@@ -91,8 +92,8 @@ public class stretchtextview extends TextView {
         setTextSize(TypedValue.COMPLEX_UNIT_PX, newTextSize);
     }
 
+
     /**
-     * 
      * 根据这些参数来配置字体大小
      *
      * @param text
